@@ -13,13 +13,13 @@ function Cards() {
               src="images/ele.jpg"
               text="Explore the various offers and collections on your favourite electronic items"
               label="ELECTRONICS"
-              path="/services"
+              path="/stores/electronics"
             />
             <CardItem
               src="images/furniture.jpg"
               text="Explore the various collections and offers on furnitures of different types of woods"
               label="FURNITURE"
-              path="/services"
+              path="/stores/furniture"
             />
           </ul>
           <ul className="cards__items">
@@ -27,19 +27,19 @@ function Cards() {
               src="images/grocery.jpg"
               text="Explore different discount rate on Your Daily Grocery items"
               label="GROCERIES"
-              path="/services"
+              path="/stores/grocery"
             />
             <CardItem
               src="images/cloth.jpg"
               text="Check around different offers on differnt variety of cloths  "
               label="CLOTHING"
-              path="/products"
+              path="/stores/clothing"
             />
             <CardItem
               src="images/food.jpg"
               text="let the tongue to taste different flavours of foods on various discounts"
               label="APPETIZING FOODS"
-              path="/sign-up"
+              path="/stores/food"
             />
           </ul>
         </div>

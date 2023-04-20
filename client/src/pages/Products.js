@@ -63,6 +63,8 @@ function Products() {
     })
       .then((res) => res.json())
       .then((data) => console.log(data));
+      window.location.replace("http://localhost:3000/products")
+
   }
 
   function getImage() {

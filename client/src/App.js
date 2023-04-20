@@ -15,6 +15,7 @@ import ContactForm from "./pages/ContactForm";
 import About from "./pages/About";
 import Signup from "./components/Singup";
 import Login from "./components/Login";
+import DomainCourse from "./components/stores";
 
 function App() {
   const user = localStorage.getItem("token");
@@ -30,9 +31,9 @@ function App() {
           {admin && user && <Route path="/products" element={<Products />} />}
           <Route path="/login" element={<Login />} />
           {user && <Route path="/contactform" element={<ContactForm />} />}
-
+          <Route path={"/stores/:domain"}element={<DomainCourse/>}></Route>
           <Route path="/sign-up" element={<Signup />} />
-          <Route path="*" element={<Navigate replace to="/login" />} />
+          {/* <Route path="*" element={<Navigate replace to="/login" />} /> */}
         </Routes>
       </Router>
     </>
